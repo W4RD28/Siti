@@ -1,5 +1,5 @@
 // Require the necessary discord.js classes
-const { Client, Intents } = require('discord.js');
+const { Client, Intents, MessageEmbed } = require('discord.js');
 const { token } = require('./config.json');
 require('dotenv').config();
 
@@ -20,6 +20,7 @@ client.on('interactionCreate', async interaction => {
 		await interaction.reply('Pong!');
 	} else if (commandName === 'beep') {
 		await interaction.reply('Boop!');
+	} else if (commandName === 'neko') {
 	}
 });
 
